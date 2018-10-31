@@ -9,15 +9,15 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Poppins:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</head> 
+</head>
 <body>
-    <header>
-        <div class="wrapper">
-            <div class="headerText clearfix">
+    <header> 
+        <div class="wrapper clearfix"> 
+            <div class="logo">
                 <h2>Summit</h2>
             </div>
-            <div>
-                <nav class="navHeader clearfix">
+            <div class="headerNav">
+                <nav>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -25,11 +25,17 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-            </div>    
-            <h1>Welcome to <div>Summit</div></h1>
-
+            </div>
+            <!-- mobile nav  -->
+            <div class="mobileNav">
+                <i class="fas fa-bars"></i>
+            </div>
+            <!-- mobile nav ends -->
+            <div class="title">    
+                <h1>Welcome to <span>Summit</span></h1>
+            </div>
             <div class="social">
-                <nav class="navSocial">
+                <nav>
                     <ul>
                         <li>
                             <a href="#facebook"> 
@@ -52,120 +58,158 @@
                             </a>
                         </li> 
                     </ul>
-                 </nav> <!--end of navSocial -->
-            </div> <!--end of social div -->
-        </div> <!--end of header wrapper -->
+                 </nav> 
+            </div> <!--/.social -->
+        </div><!-- /.wrapper -->
     </header>
     <main>
-        <div class="wrapper">
-
-            <section class="aboutMain">
-                <h3>About Summit</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatibus dolorum mollitia aut illo quas non excepturi, at expedita eius perferendis, dolores id voluptas beatae repellendus dignissimos odit officiis consequatur.</p>
+            <section class="aboutSummit">
+                <div>
+                    <h3>About Summit</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatibus dolorum mollitia aut illo quas non excepturi, at expedita eius perferendis, dolores id voluptas beatae repellendus dignissimos odit officiis consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>    
                 <div class="more">
-                    <h6>Find out more</h6>
+                    <a href="###"><h6>Find out more</h6></a>
                 </div>
-            </section>
+            </section> <!--aboutSummit end--> 
+            
 
             <section class="peak clearfix">
-                <div>
+                <div class="aboutImage">
                     <img src="assets/image-2.png" alt="">
                 </div>
                 <div class="about">
                     <h4>Peak Photos</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quasi cum incidunt odio quaerat exercitationem voluptatem unde aperiam laborum, magnam ipsa magni iure aut consectetur numquam vel nam ipsam asperiores.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quasi cum incidunt odio quaerat exercitationem voluptatem unde aperiam laborum, magnam</p>
                     <div class="more">
-                        <h6>Find out more</h6>
+                        <a href="###"><h6>Read more</h6></a>
                     </div>
                 </div>
             </section> <!--end of peak section-->
 
             <section class="packing clearfix">
+                    <div class="aboutImage">
+                        <img src="assets/image-3.png" alt="">
+                    </div>
                 <div class="about">
                     <h4>Packing Essentials</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, veniam dolorum! Quos facere optio reiciendis eaque mollitia quaerat hic sit non cum dolor vel magni ipsam rem quam, accusantium laboriosam?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quasi cum incidunt odio quaerat exercitationem voluptatem unde aperiam laborum, magnam</p>
                     <div class="more">
-                        <h6>Find out more</h6>
+                        <a href="###">
+                            <h6>Read more</h6>
+                        </a>
                     </div>
-                </div>
-                <div class="clearfix">
-                    <img src="assets/image-3.png" alt="">
-                </div>
+                </div>    
             </section> <!--end of packing section-->
 
-            <section>
-                <nav class="navMiddle">
+            <div>
+                <nav class="middleNav">
                     <ul>
-                        <li><a href="#gallery" class="fas fa-images">Gallery</a></li>
-                        <li><a href="#about" class="fas fa-user">About</a></li>
-                        <li><a href="#Contact" class="fas fa-envelope">Contact</a></li>
+                        <li>
+                            <a href="#gallery">
+                                <i class="fas fa-images"></i>
+                                <span>Gallery</span>
+                             </a>
+                        </li>
+                        <li>
+                            <a href="#About">
+                                <i class="fas fa-user"></i>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Contact">
+                                <i class="fas fa-envelope"></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
+            </div>
 
-            </section>
-            <section class="aboutMe">
-                <img src="assets/image-4.png" alt="">
-                <h3>About me</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus non quo, rem adipisci sit aliquam eius esse consectetur qui cum minima voluptate laudantium a saepe quisquam, dicta molestiae eum tempora. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam id, magni neque recusandae illo enim incidunt, quas suscipit reiciendis odio illum fugit fuga? Eius, sint facilis optio iure labore ex?</p>
-                <div class="more">
-                    <h6>Find out more</h6>
-                </div>
-            </section> <!--end of aboutMe-->
-            <div class="gallery">
-                <div class="galleryImage">
-                    <img src="assets/image-5.png" alt="">
-                </div>
-                <div class="galleryImage">
-                    <img src="assets/image-6.png" alt="">
-                </div>
-                <div class="galleryImage">
-                    <img src="assets/image-7.png" alt="">
-                </div>
-            </div> <!--end of gallery-->
-        </div> <!--end of main wrapper-->
+            <!-- START OF wrapper, below the middle contact part -->
+                <section class="aboutMe clearfix">
+                        <div class="wrapper clearfix">
+                            <div class="aboutMeImage">
+                                <img src="assets/image-4.png" alt="">
+                            </div> 
+                            <div class="aboutMeInfo wrapper">
+                                <h3>About me</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus non quo, rem adipisci sit aliquam eius esse consectetur qui cum minima voluptate laudantium a saepe quisquam, dicta molestiae eum tempora. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam id, magni neque recusandae illo enim incidunt, quas suscipit reiciendis odio illum fugit fuga? Eius, sint facilis optio iure labore ex? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eaque dolorem atque. Eaque cupiditate iusto asperiores eligendi quidem itaque unde enim</p>  
+                                <div class="more">
+                                    <a href="###">
+                                        <h6>Find out more</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>          
+                </section> <!--end of aboutMe-->
+
+            <div class="wrapper container"> <!--start of gallery-->
+                <div class="gallery clearfix">
+                        <div class="galleryImage image1">
+                            <img src="assets/image-5.png" alt="">
+                        </div>
+                        <div class="galleryImage image2">
+                            <img src="assets/image-6.png" alt="">
+                        </div>
+                        <div class="galleryImage image3">
+                            <img src="assets/image-7.png" alt="">
+                        </div>
+                </div> <!--end of gallery-->
+            </div>
     </main>
         <footer>
-            <div class="footerMain">
-                <div class="footerSubscribe">
-                    <h5>Stay updated</h5>
-                    <p>Subscribe to our newsletter for updates</p>
-                        <form action="/new_subscriber" method="post" class="mailingList" autocomplete="on">
-                            <label class="visuallyhidden" for "email" >email</label>
-                            <input type="email" name="email" placeholder="email address">
-                            <input type="submit" name="subscribe" value="subscribe">
-                        </form>
-                </div>
-                <div class="footerContact">
-                    <h5>Contact</h5>
-                    <p id="email">info@email.com</p>
-                    <p id="phone">123 - 456 - 7890</p>
-                    <p id="address">123 some road,</p>
-                    <p id="city">Toronto, ON</p>
-                </div>
-                <div class="footerPages">
-                    <h5>Pages</h5>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#content">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footerBlogPosts">
-                    <h5>Recent posts</h5>
-                    <ul>
-                        <li><a href="#blogpost">Climbing Tips</a></li>
-                        <li><a href="#blogpost">Photoraphy Guide</a></li>
-                        <li><a href="#blogpost">Top Mountains</a></li>
-                        <li><a href="#blogpost">Everest</a></li>
-                        <li><a href="#facebook" class="fab fa-facebook-f"></a></li>
-                    </ul>
-                </div>
-            </div>
+            <div class="wrapper">
+                <div class="footerMain clearfix">
+                    <div class="form">
+                        <h5>Stay updated</h5>
+                        <p>Subscribe to our newsletter for updates</p>
+                            <form action="/new_subscriber" method="post" class="mailingList clearfix" autocomplete="on">
+                                <label class="visuallyhidden" for "email" >email</label>
+                                    <input type="email" name="email" placeholder="email address">
+                                    <input type="submit" name="subscribe" value="subscribe">
+                            </form>
+                    </div>
+                    <div class="footerMenu clearfix">
+                        <div class="contact">
+                            <h5>Contact</h5>
+                            <address>
+                                info@email.com
+                                <br/>
+                                123 - 456 - 7890
+                                <br/>
+                                123 some road,
+                                <br/>
+                                Toronto, ON
+                            </address>
+                        </div>
+                        <div class="pages">
+                            <h5>Pages</h5>
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#content">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="posts">
+                            <h5>Recent posts</h5>
+                            <ul>
+                                <li><a href="#blogpost">Climbing Tips</a></li>
+                                <li><a href="#blogpost">Photoraphy Guide</a></li>
+                                <li><a href="#blogpost">Top Mountains</a></li>
+                                <li><a href="#blogpost">Everest</a></li>
+                            </ul>
+                        </div>
+                    </div> <!--end footer menu-->      
+                </div><!--end footer main-->
+            </div><!--end footer wrapper-->
             <div class="copyright">
-                <p>Copyright &copy; 2018 HackerYou</p>
-            </div>
+                <div class="wrapper">
+                    <p>Copyright &copy; 2018 HackerYou</p>
+                </div>
+            </div>   
         </footer>
-    </div>
 </body>
 </html>
