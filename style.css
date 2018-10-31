@@ -475,7 +475,7 @@ footer ul li {
     margin: 0 0;
     padding: 0 0;
 }
-
+}
 
 
 @media only screen and (max-width: 630px) {
@@ -613,8 +613,8 @@ footer ul li {
     }
 
     .footerMain div {
-    padding: 2rem 0;
-    float:none;
+        padding: 2rem 0;
+        float:none;
     }
 
     .footerMain {
@@ -650,7 +650,5 @@ footer ul li {
 
     .footerMenu div{
         padding-right: 0;
-
     }
 }
-/* end of phone */
