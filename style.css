@@ -6,197 +6,651 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 .visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
+
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 img {
     max-width: 100%;
+    display: block;
 }
 
-header .wrapper {
+.wrapper {
     margin: 0 auto;
     max-width: 1280px;
     width: 90%;
     padding: 0;
+    /* position: relative; */
+    /* border: 1px solid tomato; */
 }
+
+/* header styles start */
 
 header {
     background:url(assets/image-1.jpg) center;
     background-size: cover;
     min-height: 100vh;
-    color: #f6f6f6; 
+    position: relative;
 }
 
-h1, h2, h3, h4, h5, h6, a {
+.title {
+    padding-top: 19%;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #f6f6f6;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     margin: 0 auto;
-    text-align: center;
 }
 
 h1 {
-    font-size: 2.2rem;
-    padding-top: 10%;
-    line-height: 6rem;
-    letter-spacing: 0;
-}
-
-h1 div {
-    font-size: 10rem;
-}
-
-.headerText {
-    float:left;
-}
-
-h2 {
-    margin: 0 auto;
+    text-align: center;
     font-size: 3.2rem;
-    text-align: left;
-    padding-top: 1rem;
+    line-height: 6.5rem;
 }
 
-.navHeader {
-    text-align: right;
-}
-
-.navHeader li {
-    list-style: none;
-    display: inline-block;
-    padding: 1rem; 
-}
-
-.navHeader li:last-child {
-    padding: 2rem 0 2rem 2rem;
-}
-
-.navSocial li {
+.title span {
+    font-size: 12rem;
+    line-height: 8rem;
     display: block;
 }
 
-a {
-    text-decoration: none; 
+h2 {
+    text-align: left;
+    font-size: 4.2rem;
+    padding-top: 2%;
+}
+
+.logo {
+    float: left;
+}
+
+ul {
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.headerNav {
+    padding-top: 2%;
+}
+
+.headerNav li {
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: 0 1.6rem;
+    line-height: 2.9rem;
+}
+
+.headerNav li:last-child {
+    padding: 0;
+}
+
+.headerNav a {
+    text-decoration: none;
+    color: #f6f6f6;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin: 0 auto;    
+}
+
+.headerNav {
+    float: right;
+}
+
+/* hides the mobile-hamburger menu when on desktop  */
+.mobileNav {
+    display: none;
+}
+
+.social i {
+    color: #215a6d;
+    font-size: 2rem;
+}
+
+.social {
+    position: absolute; 
+    bottom: 3rem; 
+    right: 4rem;
+}
+
+.social ul {
+    padding: 0; 
+    margin: 0 auto;
+}
+
+.social li {
+    padding: 0 0 .9rem 0;
+}
+
+.social li:last-child {
+    padding: 0;
+}
+/* header styles end  */
+
+/* main body styles start */
+
+.aboutSummit {
+    margin: 0 auto;
+    padding: 10rem  0;
+}
+
+h3 {
+    color: #0f0f0f;
+    font-size: 4.2rem;
+    text-align: center;
 }
 
 p {
     font-family: 'Noto Sans', sans-serif;
-    font-size: 1.4rem;
-}
-
-.navHeader {
-    font-size: 1.5rem;
-}
-
-.navHeader ul {
-    margin: 0; 
-    padding: 0;
-}
-
-.navHeader a {
-    color: #f6f6f6;
-}
-
-.navSocial li {
-    text-align: center;
-}
-
-.navSocial ul a {
-    color: #215a6d;
-    font-size: 1.6rem;
-}
-
-.navSocial i {
-    text-align: center;
-}
-
-
-.navSocial {
-    float: right;
-    margin: 0 auto;
-}
-
-h3 {
-    font-size: 3.2rem;
-    text-align: center;
-    margin: 0 auto;
-    padding: 50px 0px 10px 0px 
-}
-
-h4 {
     font-size: 1.8rem;
 }
-main .wrapper {
-    margin: 0 auto;
-}
 
-.aboutMain {
-    margin: 0 auto;
-    width: 80%;
-}
-
-.aboutMain p {
+.aboutSummit p {
     margin: 0 auto;
     text-align: center; 
     width: 50%;
     display: block;
-    padding: 0px 0px 20px 0px;
+    padding: 2% 0;
 }
 
 .more {
     background: #8dd7e9;
-    margin: 0 auto 20px auto;
-    width: 15%;
+    margin: 1rem auto;
+    width: 16rem;
+    
+}
+
+.aboutMe .more {
+    width: 21rem;
+}
+
+.more a {
+    text-decoration: none;
+    color: #0f0f0f;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 }
 
 .more h6 {
-    font-size: 1.2rem;
+    margin: 0 auto;
+    font-size: 1.8rem;
     text-align: center; 
     padding: 10px;
+    text-transform: uppercase;
 }
 
-.peak p, .packing p {
+.about p {
     margin: 0 auto;
     text-align: center; 
-    width: 30%;
+    width: 35rem;
     display: block;
-    padding: 0px 0px 20px 0px;
+    padding: 0 0 2.5rem 0;
 }
 
-.peak .about {
+.packing, .peak {
     background: #f6f6f6;
+}
+
+h4 {
+    font-size: 3rem;
+    color: #0f0f0f;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+.aboutImage, .about {
     width: 50%;
     float: left;
 }
 
-.peak img, .packing .about {
-    float: left;
-}
-
-.peak div:first-child, .packing div:first-child {
-    width: 50%;
-}
-
-.packing img {
+.packing .aboutImage, 
+.packing .about {
     float: right;
 }
 
-.packing .about {
-    float: left;
-    background: #f6f6f6;
-    width: 50%;
+
+.peak img, .packing img {
+    width: 100%;
 }
 
+.peak .about {
+    padding-right: 5rem; 
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.packing .about {
+    padding-left: 5rem; 
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+ /* middle nav styles start */
+
+.middleNav {
+    background: #215a6d;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin: 0 auto;   
+    padding: 7rem 0; 
+}
+
+.middleNav ul {
+    padding: 0;
+}
+
+.middleNav li {
+    display: inline-block;
+    padding: 0 12rem;
+}
+
+
+.middleNav li:nth-child(odd) {
+    padding: 0;
+}
+
+.middleNav ul li a {
+    text-decoration: none;
+    color: #f6f6f6;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.middleNav i {
+    color: #f6f6f6;
+    font-size: 2.8rem;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+.middleNav span {
+    display: block;
+}
+
+.aboutMe {
+    background: #f6f6f6;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.aboutMe h3 {
+    text-align: left;
+    font-size: 4.2rem;
+}
+
+
+.aboutMeImage {
+    width: 30%;
+    padding: 9rem 0;
+    float: left; 
+}
+
+.aboutMeImage img {
+    width: 100%;
+    padding-right: 4rem;
+}
+
+.aboutMeInfo {
+    float: left;
+    margin: 0 auto;
+    padding: 8rem 0 0 0;
+    text-align: left;
+    width: 70%;
+    position: relative;
+}
+
+.aboutMe .more {
+    margin: 0 0; 
+}
+
+.aboutMeInfo p {
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
+    line-height: 3.1rem;
+    margin: 0 0;
+}
+
+.galleryImage {
+    float: left;
+    width: calc((100%/3) - 3rem);
+    padding: 10rem 0;
+    margin-right: 4rem;
+}
+ .image3 {
+    margin-right: 0;
+ }
+
+
+.galleryImage img {
+    width: 100%;
+}
+
+/* footer styles start */
 footer {
+    color: #f6f6f6;
+    background: #215a6d;
+}
+
+h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+    padding-bottom: .5rem;
+}
+
+footer ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 0; 
+}
+
+footer ul li a {
+    line-height: 2.9rem;
+
+}
+
+footer a {
+    text-decoration: none;
     color: #f6f6f6;
 }
 
 .footerMain {
-    background: #215a6d;
+    margin: 0 auto;
 }
+
+.footerMain div {
+    float: left;
+}
+
+.footerMain div:last-of-type {
+    padding-right: 0;
+}
+
+.footerMenu div {
+    float: left;
+    padding: 7rem 7rem 5rem 0rem;
+}
+
+.footerMenu {
+    width: 50%;
+}
+
+.form {
+    width: 50%;
+    padding: 7rem 7rem 5rem 0rem;
+}
+
+.form p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    margin-top: .4rem;
+}
+
+
+.form input[type=email] {
+    width: 66%;
+    border: 1px solid #f6f6f6;
+    background: #f6f6f6;
+    padding: 1rem 1rem 1rem 2rem;
+    margin: 0;
+    height: 4rem;
+    font-family: 'Noto Sans', sans-serif;
+    color: #0f0f0f;
+    float:left;
+
+}
+
+.form input[type=submit] {
+    width: 34%;
+    border-radius: 0%;
+    background: #8dd7e9;
+    border: 1px solid #8dd7e9;
+    padding: 0; 
+    margin: 0;
+    height: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    float: left;
+}
+
+input::placeholder {
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(35,35,35,);
+    font-size: 1.5rem;
+    opacity: .8;
+}
+
+address {
+    margin-top: 2%;
+    line-height: 2.9rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-size: 1.8rem;
+}
+
+.contact {
+    margin-left: 7%;
+}
+
+footer ul li {
+    line-height: 2rem;
+    font-size: 1.8rem;
+}
+
+.pages ul li a, 
+.posts ul li a {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.pages ul li a {
+    text-transform: uppercase;
+}
+
 
 .copyright {
     background: #094154;
 }
 
+.copyright p {
+    margin: 0 auto;
+    text-align: center;
+    padding: .8% 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* responsive styles start */
+@media only screen and (max-width: 740px) {
+.wrapper.container {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+
+
+@media only screen and (max-width: 630px) {
+    .wrapper {
+        position: relative;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .title {
+        padding-top: 18rem;
+    }
+
+    .title span {
+        font-size: 8rem;
+        line-height: 4rem;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .headerNav {
+        display: none;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .mobileNav {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 1.8rem;
+        color: white;
+        font-size: 3rem;
+    }
+
+    .aboutSummit {
+        padding: 4rem 0;
+    }
+
+    .aboutSummit h3 {
+        padding-bottom: 2rem;
+    }
+
+    .aboutSummit p {
+        font-size: 1.8rem;
+        width: 90%; 
+        padding: 0 .9rem 2rem .9rem;
+        line-height: 2.9rem;
+    }
+
+    .aboutImage, .about {
+        width: 100%;
+        float: none;
+    }
+
+    .peak .about,
+    .packing .about {
+        padding: 2rem 0 2rem 0; 
+    }
+
+    .about p {
+        width: 100%;
+        line-height: 2.9rem;
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .middleNav {
+        padding: 3rem 0;
+    }
+
+    .middleNav li {
+        display: block;
+    }
+
+    .middleNav li:nth-child(2){
+        padding: 3rem;
+    }
+
+    .middleNav i {
+        padding: 0;
+    }
+
+
+    .aboutMe {
+        padding-bottom: 3rem;
+    }
+
+    .aboutMe h3 {
+        text-align: center;
+    }
+
+
+    .aboutMeImage {
+        width: 100%;
+        padding: 2rem;
+        float: none; 
+    }
+
+    .aboutMeImage img {
+        width: 100%;
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    .aboutMeInfo {
+        float: none;
+        padding: 0;
+        text-align: left;
+        width: 100%;
+        position: relative;
+    }
+
+    .aboutMe .more {
+        margin: 0 auto;
+    }
+
+    .aboutMeInfo p {
+        padding-bottom: 1.5rem;
+        font-size: 1.4rem;
+    }
+    
+    .galleryImage {
+        float: left;
+        width: 50%;
+        padding: 0 0;
+        margin: 0 auto;
+        text-align: center;
+    }   
+
+    .image3 {
+        display: none;
+    }
+
+    .footerMain div {
+    padding: 2rem 0;
+    float:none;
+    }
+
+    .footerMain {
+        padding: 0;
+        margin: 0;
+    }
+
+    .form {
+        width: 100%; 
+        padding: 0;
+    }
+
+    .form input[type=email],
+    .form input[type=submit] {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    footer, footer ul {
+        text-align: center;
+    }
+
+    .copyright p {
+        padding: 1.5rem 0;
+    }
+
+    .footerMenu{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footerMenu div{
+        padding-right: 0;
+
+    }
+}
+/* end of phone */
