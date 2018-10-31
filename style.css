@@ -470,6 +470,30 @@ footer ul li {
 }
 
 /* responsive styles start */
+@media only screen and (max-width: 1264px) {
+    
+    }
+}
+
+@media only screen and (max-width: 1264px) {
+
+.footerMenu div {
+    padding: 7rem 2rem 5rem 0rem;
+}
+
+.form {
+    padding-right: 2rem;
+}
+} 
+
+@media only screen and (max-width: 1024px) {
+
+.footerMenu div {
+    padding: 7rem 3rem 5rem 0rem;
+}
+
+}
+
 @media only screen and (max-width: 740px) {
 .wrapper.container {
     margin: 0 0;
